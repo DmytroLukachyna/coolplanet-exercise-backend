@@ -1,0 +1,47 @@
+{
+  "name": "coolplanet-exercise-backend",
+  "version": "1.0.0",
+  "description": "Backend part of exercise for CoolPlanet",
+  "author": {
+    "name": "Dmytro Lukachyna",
+    "email": "dmytrolukachyna@gmail.com",
+    "url": "https://dmytrolukachyna.pp.ua/"
+  },
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "npx pkgroll --clean-dist && copyfiles -f src/data/users.json dist/data",
+    "start": "node dist/index.js",
+    "format": "prettier --write 'src/**/*.{js,ts,md}' --config ./.prettierrc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmytroLukachyna/coolplanet-exercise-backend.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DmytroLukachyna/coolplanet-exercise-backend/issues"
+  },
+  "homepage": "https://github.com/DmytroLukachyna/coolplanet-exercise-backend#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@types/node": "^22.9.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.12.0",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.13.0"
+  }
+}
