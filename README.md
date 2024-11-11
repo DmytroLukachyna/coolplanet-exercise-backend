@@ -2,7 +2,7 @@
 
 # CoolPlanet - Exercise - Backend part
 
-This repository contains the backend part of the CoolPlanet exercise.
+This repository contains the backend part of the CoolPlanet exercise. Frontend part can be found [here](https://github.com/DmytroLukachyna/coolplanet-exercise-frontend).
 
 ## Table of Contents
 
